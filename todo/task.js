@@ -1,15 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
     const input = document.getElementById('task__input');
     const taskList = document.getElementById('tasks__list');
-
-    input.addEventListener('keydown', function (event) {
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            addTask();
-        }
-    });
-
     const addButton = document.getElementById('tasks__add');
+    
     addButton.addEventListener('click', function (event) {
         event.preventDefault();
         addTask();
